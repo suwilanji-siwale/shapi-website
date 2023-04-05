@@ -1,0 +1,82 @@
+.ba-1{
+    background-color:#1e88e5
+}
+.ba-2{
+    background-color:#3396ff
+}
+.ba-3{
+    background-color:#fef1f4
+}
+.ba-4{
+    background-color:#2962ff
+}
+.background-main-color{
+    background-color:#0ccd9d
+}
+.background-second-color{
+    background-color:#6a26da
+}
+.text-main-color{
+    color:#575757
+}
+.text-main-color-small{
+    color: #fff
+}
+.text-second-color{
+    color:#3f84e5
+}
+.border-main-color{
+    border-color:#3f84e5!important
+}
+.border-second-color{
+    border-color:#61c19e!important
+}
+ul.pagination.color li a{
+    background-color:#3f84e5
+}
+ul.pagination.color-1 li a{
+    background-color:#3f84e5
+}
+a.btn-outline-primary{
+    border-color:#3f84e5;
+    color:#3f84e5
+}
+a.btn-outline-primary:hover{
+    background-color:#3f84e5
+}
+section .section-title h1 span{
+    color:#3f84e5
+}
+.owl-theme .owl-controls .owl-page span{
+    border:1px solid #3f84e5
+}
+.widget h4.widget-title{
+    color:#3f84e5
+}
+.widget.widget_nav_menu ul li a:before,.widget.widget_recent_entries ul li a:before,.widget.widget_recent_comments ul li a:before,.widget.widget_archive ul li a:before,.widget.widget_categories ul li a:before,.widget.widget_meta ul li a:before,.widget.widget_rss ul li a:before{
+    color:#3f84e5
+}
+h4.table-title{
+    color:#3f84e5
+}
+.nav-tabs-2 .nav-link{
+    background-color:#3f84e5
+}
+.timeline-item .date:before{
+    color:#3f84e5
+}
+header a.model-link span{
+    background-color:#3f84e5
+}
+header ul.nav-menu>li.active>a{
+    color:#3f84e5
+}
+header ul.nav-menu>li>a:hover{
+    color:#3f84e5
+}
+.mega-links-4columns ul.sub-menu-columns>li>a{
+    color:#3f84e5
+}
+header a.model-link span{
+    background-color:#3f84e5
+}

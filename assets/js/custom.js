@@ -1,0 +1,80 @@
+(function($){
+    "use strict";
+    $(window).imagesLoaded(function(){
+        wow.init();
+    }
+    );
+    var wow=new WOW({
+        boxClass:'wow',animateClass:'animated',offset:0,mobile:false,live:true
+    }
+    );
+    var $menu_show=$('.mobile-toggle'),$menu=$('header #menu-main'),$list=$("ul.nav-menu li a"),$menu_list=$('header li.has-dropdown'),$menu_ul=$('ul.sub-menu'),$cart_model=$('.cart-model'),$cart_link=$('#cart-link'),$search_bar=$('#search_bar'),$search_close=$('.close-search'),$search_bot=$('#search-header'),$fixed_header=$('#fixed-header'),$fixed_header_dark=$('#fixed-header-dark'),$sticky_content=$('.sticky-content'),$sticky_sidebar=$('.sticky-sidebar');
+    $menu_show.on("click",function(e){
+        $menu.slideToggle();
+    }
+    );
+    $list.on("click",function(e){
+        var submenu=this.parentNode.getElementsByTagName("ul").item(0);
+        if(submenu!=null){
+            event.preventDefault();
+            $(submenu).slideToggle();
+        }
+    }
+    );
+    $cart_link.on("click",function(e){
+        $cart_model.slideToggle("fast");
+    }
+    );
+    $(window).on("click",function(e){
+        $cart_model.hide("fast");
+    }
+    );
+    $cart_link.on("click",function(e){
+        event.stopPropagation();
+    }
+    );
+    $search_bot.on("click",function(e){
+        $search_bar.slideToggle("fast");
+    }
+    );
+    $search_close.on("click",function(e){
+        $search_bar.hide("fast");
+    }
+    );
+    var owl2=$(".slider-1");
+    var owl3=$('.travelers-say-3');
+    var owl=$(".testimonial-carousel");
+    owl.owlCarousel({
+        items:3,itemsDesktop:[1000,3],itemsDesktopSmall:[900,3],itemsTablet:[600,1],slideSpeed:1000,autoPlay:true,itemsMobile:false
+    }
+    );
+    owl3.owlCarousel({
+        dotsContainer:'#carousel-custom-dots',items:3,itemsDesktop:[1000,3],itemsDesktopSmall:[900,3],itemsTablet:[600,1],itemsMobile:false
+    }
+    );
+    $(document).on('click','[data-toggle="lightbox"]',function(event){
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    }
+    );
+    $(window).on("scroll",function(){
+        if($(window).scrollTop()>=50){
+            $fixed_header.addClass('fixed-header');
+            $fixed_header_dark.addClass('fixed-header-dark');
+        }
+        else{
+            $fixed_header.removeClass('fixed-header');
+            $fixed_header_dark.removeClass('fixed-header-dark');
+        }
+    }
+    );
+    $sticky_content.theiaStickySidebar({
+        additionalMarginTop:30
+    }
+    );
+    $sticky_sidebar.theiaStickySidebar({
+        additionalMarginTop:30
+    }
+    );
+}
+(jQuery));
